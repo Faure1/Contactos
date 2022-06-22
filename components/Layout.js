@@ -7,32 +7,28 @@ import { Nav, Navbar,  Container,  } from 'react-bootstrap'
 const Nava = ({children}) => {
     return(
       <>
-      <Navbar collapseOnSelect expand="lg" sticky="top" className='bg-danger'>
+      <Navbar collapseOnSelect expand="lg" sticky="top" className='bg-info'>
           <Container>
-            <Nav.Link ><Image alt='dragonball' src='/assets/logo.png'  width={230} height={120} layout='intrinsic'/></Nav.Link>
+            <Nav.Link ><h1 className='text-dark'>Div<span className='text-primary'>Geek</span></h1></Nav.Link>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav  justify-content-between">
               <Nav className="me-auto  d-flex  ">
               </Nav>
               <Nav>
-                <Nav.Link href='#inicio' ><p className='letras-nav text-center'>INICIO</p></Nav.Link>
-                <Nav.Link href='#sagas' ><p className='letras-nav text-center'>SAGAS</p></Nav.Link>
-                <Nav.Link href='#ver'><p className='letras-nav text-center'>VER</p></Nav.Link>
+                <Nav.Link className='nav' href='#inicio' ><h5 className='text-dark text-center'>Inicio</h5></Nav.Link>
+                <Nav.Link  className='nav' href='#sagas' ><h5 className='text-dark text-center'>Sobre nosotos</h5></Nav.Link>
+                <Nav.Link className='nav' href='#ver'><h5 className='text-dark text-center'>Proyectos</h5></Nav.Link>
+                <Nav.Link className='nav' href='#ver'><h5 className='text-darktext-center'>Tareas</h5></Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
       </Navbar>
       {children}
-      <Navbar collapseOnSelect expand="lg" sticky="top" className='bg-dark'>
-          <Container>
-            <Nav.Link ><Image alt='dragonball' src='/assets/logo-2.png'  width={130} height={130} layout='intrinsic'/></Nav.Link>
-              <Nav className="me-auto  d-flex  ">
-              </Nav>
-              <Nav>
-                <Nav.Link><h3 className=" text-light">© Derechos reservados </h3></Nav.Link>
-              </Nav>
-          </Container>
-      </Navbar>
+      <div className='text-white d-flex justify-content-center  bg-dark ' >
+        <div >
+          <p ><span className='ancho-letra-copy'> © </span> DivGeeks Industries/ From SFFN</p>
+        </div>
+      </div>
     </>
     )
 }
