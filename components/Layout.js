@@ -9,7 +9,7 @@ const Nava = ({children}) => {
       <>
       <Navbar collapseOnSelect expand="lg" sticky="top" className='bg-info'>
           <Container>
-            <Nav.Link ><h1 className='text-dark'>Div<span className='text-primary'>Geek</span></h1></Nav.Link>
+            <Nav.Link ><h1 className='text-dark'>Div<span className='text-primary'>Geeks</span></h1></Nav.Link>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav  justify-content-between">
               <Nav className="me-auto  d-flex  ">
